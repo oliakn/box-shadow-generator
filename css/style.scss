@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background: #1D1C25;
+  color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.section{
+  &__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-shadow: 0 2px 12px #FC3E81;
+    margin: 90px 0 90px;
+  }
+}
+.settings{
+  &__title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin:11px 0 14px;
+  }
+  &-colors{
+    padding-right: 220px;
+    margin-top: 40px;
+
+  }
+  &-color{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.box{
+  background: #FFFFFF;
+  box-shadow: 9px 9px 12px 3px rgba(155, 224, 88, 0.8);
+  border-radius: 20px;
+  width: 390px;
+  height: 490px;
+  text-align: center;
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-shadow__code{
+    background: #F1F0F0;
+    border: 1px solid rgba(29, 28, 37, 0.66);
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 350px;
+    height: 89px;
+    margin-top: 31px;
+    color: rgba(29, 28, 37, 0.66);
+    padding: 20px 0;
+  }
+}
+:root {
+  --deg: 5deg;
+  --base: #fc3e81;
+  --second: #7e8bc6;
+  --trackball: var(--base);
+  --range: 0%;
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 300px;
+  position: relative;
+
+  &:focus {
+    outline: none;
+
+    &::-webkit-slider-thumb {
+      // transform: scale(3);
+      // transition: 0.5s all ease;
+    }
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    width: var(--range);
+    height: 2px;
+    background: var(--second);
+  }
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--base);
+  height: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: none;
+  -webkit-appearance: none;
+  background-color: var(--trackball);
+  margin-top: -3.5px;
+  z-index: 99;
+  position: relative;
+  transition: 0.5s all ease;
+
+
+//#value {
+//  position: absolute;
+//  left: var(--range);
+//  top: 41%;
+//  font-size: 14px;
+//  color: var(--trackball);
+//  transition: 0.5s color ease;
+//}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+<section class="section">
+    <div class="container section__container">
+        <h2 class="section__title">Box-Shadow Generator</h2>
+        <div class="row">
+            <div class="col-6 settings">
+                <div class="settings-range">
+                    <p class="settings__title">Horizontal Length</p>
+                    <input id="horizontal" type="range" value="9" max="100" min="0" class="horizontal">
+                    <label for="horizontal" id="value"></label>
+                    <p class="settings__title">Vertical Length</p>
+                    <input id="vertical" type="range" value="9" max="100" min="0" class="vertical">
+                    <label for="vertical"></label>
+                    <p class="settings__title">Blur Radius</p>
+                    <input id="blur" type="range" value="12" max="100" min="0" class="blur">
+                    <label for="blur"></label>
+                    <p class="settings__title">Spread Radius</p>
+                    <input id="spread" type="range" value="3" max="100" min="0" class="spread">
+                    <label for="spread"></label>
+                </div>
+                <div class="settings-colors">
+                    <div class="settings-color">
+                        <label for="shadow" class="settings__title">Shadow Color</label>
+                        <input type="color" id="shadow" class="shadow" value="#C0FF66">
+                    </div>
+<!--                   <div class="settings-color">-->
+<!--                       <label for="background" class="settings__title">Background Color</label>-->
+<!--                       <input type="color" id="background" class="background" value="#1D1C25">-->
+<!--                   </div>-->
+<!--                    <div class="settings-color">-->
+<!--                        <label for="box_color" class="settings__title">Box Color</label>-->
+<!--                        <input type="color" id="box_color" class="box_color" value="#FFFFFF">-->
+<!--                    </div>-->
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="box">
+                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 28.5C0 12.7597 12.7597 0 28.5 0C44.2403 0 57 12.7597 57 28.5C57 44.2403 44.2403 57 28.5 57C12.7597 57 0 44.2403 0 28.5ZM28.5 45.5428C37.9124 45.5428 45.5428 37.9124 45.5428 28.5C45.5428 19.0876 37.9124 11.4572 28.5 11.4572C19.0876 11.4572 11.4572 19.0876 11.4572 28.5C11.4572 37.9124 19.0876 45.5428 28.5 45.5428Z" fill="#83D9FF"/>
+                        <path d="M28.5 57V45.5428C30.6757 45.5428 32.7548 45.1357 34.6678 44.3925L38.5878 55.1626C35.451 56.3499 32.0521 57 28.5 57Z" fill="#3FEFEF"/>
+                        <path d="M34.6678 44.3925C36.637 43.6276 38.4295 42.5069 39.9664 41.1088L47.3353 49.8894C44.7835 52.1372 41.8268 53.9367 38.5878 55.1627L34.6678 44.3925Z" fill="#1DD1D9"/>
+                        <path d="M39.9664 41.1088C41.4871 39.7246 42.757 38.0694 43.6993 36.2186L53.6302 41.9529C52.0168 44.9622 49.8767 47.6493 47.3349 49.8893L39.9664 41.1088Z" fill="#17B5BA"/>
+                        <path d="M45.0757 24.5213L56.3725 22.5292C56.7843 24.4548 57 26.4517 57 28.5C57 29.8303 56.9082 31.1388 56.7317 32.4213L45.4349 30.4304C45.5058 29.7972 45.5428 29.1527 45.5428 28.5C45.5428 27.1293 45.381 25.7981 45.0757 24.5213Z" fill="#9BE058"/>
+                        <path d="M42.7835 19.1976L52.7152 13.4633C54.4229 16.2091 55.6775 19.2654 56.3725 22.5292L45.0757 24.5213C44.616 22.5992 43.8315 20.8045 42.7835 19.1976Z" fill="#C0FF66"/>
+                        <path d="M38.9261 15.0184L46.2951 6.23654C48.8226 8.25958 50.9983 10.704 52.7152 13.4633L42.7835 19.1976C41.7385 17.5977 40.4321 16.1848 38.9261 15.0184Z" fill="#FFDF46"/>
+                        <path d="M19.091 1.59077C22.0373 0.559685 25.2028 0 28.5 0V11.4572C26.5787 11.4572 24.7327 11.7751 23.0097 12.3609L19.091 1.59077Z" fill="#FC3E81"/>
+                        <path d="M10.7049 6.23655C13.1928 4.24569 16.0217 2.66318 19.0897 1.59077H19.091L23.0097 12.3609C21.2102 12.9723 19.5463 13.8773 18.0739 15.0184L10.7049 6.23655Z" fill="#F01054"/>
+                        <path d="M4.28482 13.4633C6.00171 10.704 8.17739 8.26002 10.7049 6.23654L18.0739 15.0184C16.5679 16.1848 15.2615 17.5977 14.2169 19.1976L4.28482 13.4633Z" fill="#7884EA"/>
+                        <path d="M0.268311 32.4213L11.5651 30.4304C11.7982 32.4935 12.3987 34.4456 13.3007 36.2186L3.36941 41.9529C1.80733 39.041 0.736237 35.8272 0.268311 32.4213Z" fill="#1685FB"/>
+                        <path d="M3.36942 41.9529L13.3002 36.2186C14.243 38.0694 15.5129 39.7246 17.0336 41.1088L9.66467 49.8893C7.12326 47.6493 4.98324 44.9622 3.36942 41.9529Z" fill="#43A3F9"/>
+                        <path d="M9.66467 49.8894L17.0336 41.1088C18.5701 42.5069 20.3626 43.6276 22.3322 44.3925L18.4118 55.1627C15.1732 53.9367 12.2165 52.1372 9.66467 49.8894Z" fill="#64BDFF"/>
+                        <path d="M0.627533 22.5292C1.32246 19.2654 2.57708 16.2091 4.28484 13.4633L14.2165 19.1976C13.1685 20.8045 12.384 22.5992 11.9243 24.5213L0.627533 22.5292Z" fill="#4A5BE5"/>
+                        <path d="M43.6998 36.2186C44.6013 34.4452 45.2018 32.4935 45.4349 30.4304L56.7317 32.4213C56.2638 35.8272 55.1927 39.041 53.6306 41.9529L43.6998 36.2186Z" fill="#1CC939"/>
+                        <path d="M0 28.5C0 26.4517 0.215698 24.4548 0.627525 22.5292L11.9243 24.5213C11.619 25.7981 11.4572 27.1293 11.4572 28.5C11.4572 29.1527 11.4942 29.7972 11.5651 30.4304L0.268318 32.4213C0.0917588 31.1388 0 29.8303 0 28.5H0Z" fill="#364EC6"/>
+                        <path d="M33.9903 12.3609L37.9103 1.59077C40.9783 2.66318 43.8076 4.24569 46.2951 6.23698L38.9266 15.0184C37.4536 13.8773 35.7894 12.9723 33.9903 12.3609Z" fill="#F9B200"/>
+                        <path d="M28.5 11.4572V0C31.7972 0 34.964 0.559685 37.9103 1.59077L33.9899 12.3609C32.2673 11.7751 30.4213 11.4572 28.5 11.4572Z" fill="#FD6096"/>
+                    </svg>
+                    <div class="box-shadow__code"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
