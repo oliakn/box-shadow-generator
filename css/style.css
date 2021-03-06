@@ -133,4 +133,41 @@ input[type=range]::-webkit-slider-thumb {
   transition: 0.5s all ease;
 }
 
+input[type=color] {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  cursor: pointer;
+  height: 25px;
+  padding: 0;
+  width: 50px;
+  background: #FC3E81;
+  border: 1px solid #FFDF46;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+*:focus {
+  border-radius: 0;
+  outline: none;
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+::-webkit-color-swatch {
+  border: 0;
+  border-radius: 0;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner {
+  border: 0;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

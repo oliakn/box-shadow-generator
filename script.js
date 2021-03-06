@@ -3,12 +3,12 @@ let vertical = document.querySelector('.vertical')
 let blur = document.querySelector('.blur')
 let spread = document.querySelector('.spread')
 let shadow = document.querySelector('.shadow')
-let background = document.querySelector('.background')
-let box_color = document.querySelector('.box_color')
+// let background = document.querySelector('.background')
+// let box_color = document.querySelector('.box_color')
 let box = document.querySelector('.box')
 let boxShadowCode = document.querySelector('.box-shadow__code')
 let settingsRanges = document.querySelectorAll('.settings-range input')
-
+let currrentEffect
 
 settingsRanges.forEach(input => {
     input.addEventListener('input', () => {
