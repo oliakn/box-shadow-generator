@@ -8,8 +8,35 @@
     .container {
         Max-width: 750px
     }
-    .section__title{
+
+    .settings__title {
         font-size: 17px;
+    }
+
+    .col-6 {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .box-shadow {
+        display: flex;
+        justify-content: center;
+    }
+
+    .settings-colors {
+        display: flex;
+        justify-content: center;
+    }
+    .settings-colors{
+        padding-right: 0;
     }
 }
 
@@ -17,22 +44,24 @@
     .container {
         Max-width: none
     }
-    .section__title{
-        font-size: 26px;
+
+    .section__title {
+        font-size: 28px;
     }
-    .section__title{
+
+    .settings__title {
         font-size: 16px;
     }
 }
 
 @media (max-width: 540px) {
-    .section__title{
+    .settings__title {
         font-size: 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .section__title{
+    .settings__title {
         font-size: 14px;
     }
 }
