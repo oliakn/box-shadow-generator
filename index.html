@@ -19,31 +19,40 @@
             <div class="col-6 settings">
                 <div class="settings-range">
                     <p class="settings__title">Horizontal Length</p>
-                    <input id="horizontal" type="range" value="9" max="100" min="0" class="horizontal">
-                    <label for="horizontal" id="value"></label>
+                   <div class="input-box">
+                       <input id="horizontal" type="range" value="9" max="100" min="0" class="horizontal">
+                       <label for="horizontal" id="value" class="input-value"></label>
+                   </div>
                     <p class="settings__title">Vertical Length</p>
-                    <input id="vertical" type="range" value="9" max="100" min="0" class="vertical">
-                    <label for="vertical"></label>
+                   <div class="input-box">
+                       <input id="vertical" type="range" value="9" max="100" min="0" class="vertical">
+                       <label for="vertical" class="vertical-value"></label>
+                   </div>
                     <p class="settings__title">Blur Radius</p>
+                    <div class="input-box">
                     <input id="blur" type="range" value="12" max="100" min="0" class="blur">
-                    <label for="blur"></label>
+                    <label for="blur" class="blur-value"></label>
+                    </div>
                     <p class="settings__title">Spread Radius</p>
+                    <div class="input-box">
                     <input id="spread" type="range" value="3" max="100" min="0" class="spread">
-                    <label for="spread"></label>
-                </div>
-                <div class="settings-colors">
+                    <label for="spread" class="spread-value"></label>
+                    </div>
                     <div class="settings-color">
                         <label for="shadow" class="settings__title settings-color__title">Shadow Color</label>
                         <input type="color" id="shadow" class="shadow" value="#C0FF66">
                     </div>
-<!--                   <div class="settings-color">-->
-<!--                       <label for="background" class="settings__title">Background Color</label>-->
-<!--                       <input type="color" id="background" class="background" value="#1D1C25">-->
-<!--                   </div>-->
-<!--                    <div class="settings-color">-->
-<!--                        <label for="box_color" class="settings__title">Box Color</label>-->
-<!--                        <input type="color" id="box_color" class="box_color" value="#FFFFFF">-->
-<!--                    </div>-->
+
+                </div>
+                <div class="settings-colors">
+                   <div class="settings-color">
+                       <label for="background" class="settings__title">Background Color</label>
+                       <input type="color" id="background" class="background" value="#1D1C25">
+                   </div>
+                    <div class="settings-color">
+                        <label for="box_color" class="settings__title">Box Color</label>
+                        <input type="color" id="box_color" class="box_color" value="#FFFFFF">
+                    </div>
                 </div>
             </div>
             <div class="col-6 box-shadow">
@@ -68,7 +77,12 @@
                         <path d="M33.9903 12.3609L37.9103 1.59077C40.9783 2.66318 43.8076 4.24569 46.2951 6.23698L38.9266 15.0184C37.4536 13.8773 35.7894 12.9723 33.9903 12.3609Z" fill="#F9B200"/>
                         <path d="M28.5 11.4572V0C31.7972 0 34.964 0.559685 37.9103 1.59077L33.9899 12.3609C32.2673 11.7751 30.4213 11.4572 28.5 11.4572Z" fill="#FD6096"/>
                     </svg>
-                    <div class="box-shadow__code"></div>
+                    <div class="box-shadow__code">
+                        <div class="box-shadow-value"></div>
+                        <div class="box-color-value"></div>
+                        <div class="box-bg-value"></div>
+                    </div>
+
                 </div>
             </div>
         </div>

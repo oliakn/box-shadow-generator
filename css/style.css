@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --range: 10%;
+  --vertical: 10%;
+  --blur: 10%;
+  --spread: 10%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +23,6 @@ a {
 
 body {
   font-family: "PT Sans", sans-serif;
-  background: #1D1C25;
   color: #FFFFFF;
 }
 
@@ -42,13 +48,18 @@ img {
   padding: 0 15px;
 }
 
+.section {
+  min-height: 100vh;
+  background: #1D1C25;
+}
 .section__title {
   text-align: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
-  text-shadow: 0 2px 12px #FC3E81;
-  margin: 90px 0 90px;
+  text-shadow: 0 2px 12px #f01154;
+  margin: 0 0 90px;
+  padding-top: 90px;
 }
 
 .settings__title {
@@ -57,14 +68,18 @@ img {
   line-height: 23px;
   margin: 11px 0 14px;
 }
-.settings-colors {
-  padding-right: 220px;
-  margin-top: 40px;
-}
 .settings-color {
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.settings-range {
+  max-width: 300px;
+}
+
+.input-box {
+  margin-bottom: 20px;
 }
 
 .box {
@@ -93,8 +108,7 @@ img {
 
 :root {
   --deg: 5deg;
-  --base: #fc3e81;
-  --second: #7e8bc6;
+  --base: #f01154;
   --trackball: var(--base);
   --range: 0%;
 }
@@ -112,7 +126,6 @@ input[type=range]:before {
   content: "";
   width: var(--range);
   height: 2px;
-  background: var(--second);
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -135,6 +148,7 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=color] {
   appearance: none;
+  -moz-appearance: none;
   -webkit-appearance: none;
   background: none;
   cursor: pointer;
@@ -142,7 +156,7 @@ input[type=color] {
   padding: 0;
   width: 50px;
   background: #FC3E81;
-  border: 1px solid #FFDF46;
+  border: 2px solid #FFDF46;
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -161,13 +175,52 @@ input[type=color] {
   border-radius: 0;
 }
 
-::-moz-color-swatch,
 ::-moz-focus-inner {
   border: 0;
 }
 
 ::-moz-focus-inner {
   padding: 0;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-value {
+  position: absolute;
+  left: var(--range);
+  bottom: 50%;
+  font-size: 14px;
+  transition: 0.5s color ease;
+  color: #f01154;
+}
+
+.vertical-value {
+  position: absolute;
+  left: var(--vertical);
+  bottom: 50%;
+  font-size: 14px;
+  transition: 0.5s color ease;
+  color: #f01154;
+}
+
+.blur-value {
+  position: absolute;
+  left: var(--blur);
+  bottom: 50%;
+  font-size: 14px;
+  transition: 0.5s color ease;
+  color: #f01154;
+}
+
+.spread-value {
+  position: absolute;
+  left: var(--spread);
+  bottom: 50%;
+  font-size: 14px;
+  transition: 0.5s color ease;
+  color: #f01154;
 }
 
 /*# sourceMappingURL=style.css.map */
