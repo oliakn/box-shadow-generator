@@ -57,7 +57,7 @@ img {
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
-  text-shadow: 0 2px 12px #f01154;
+  text-shadow: 0 2px 12px #FC3E81;
   margin: 0 0 90px;
   padding-top: 90px;
 }
@@ -108,7 +108,7 @@ img {
 
 :root {
   --deg: 5deg;
-  --base: #f01154;
+  --base: #fc3e81;
   --trackball: var(--base);
   --range: 0%;
 }
@@ -193,7 +193,7 @@ input[type=color] {
   bottom: 50%;
   font-size: 14px;
   transition: 0.5s color ease;
-  color: #f01154;
+  color: #FC3E81;
 }
 
 .vertical-value {
@@ -202,7 +202,7 @@ input[type=color] {
   bottom: 50%;
   font-size: 14px;
   transition: 0.5s color ease;
-  color: #f01154;
+  color: #FC3E81;
 }
 
 .blur-value {
@@ -211,7 +211,7 @@ input[type=color] {
   bottom: 50%;
   font-size: 14px;
   transition: 0.5s color ease;
-  color: #f01154;
+  color: #FC3E81;
 }
 
 .spread-value {
@@ -220,7 +220,7 @@ input[type=color] {
   bottom: 50%;
   font-size: 14px;
   transition: 0.5s color ease;
-  color: #f01154;
+  color: #FC3E81;
 }
 
 /*# sourceMappingURL=style.css.map */
